@@ -270,7 +270,7 @@ ElgazarBot.sendMessage(anu.id, buttonMessage, {quoted:unicorndoc})
         if (id.endsWith("@g.us")) return new Promise(async (resolve) => {
             v = store.contacts[id] || {}
             if (!(v.name || v.subject)) v = ElgazarBot.groupMetadata(id) || {}
-            resolve(v.name || v.subject || PhoneNumber('+' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
+            resolve(v.name || v.subject || PhoneNumber('+201123180188' + id.replace('@s.whatsapp.net', '')).getNumber('international'))
         })
         else v = id === '0@s.whatsapp.net' ? {
             id,
